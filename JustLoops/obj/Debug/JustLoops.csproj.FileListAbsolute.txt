@@ -1,1 +1,6 @@
 c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\bin\Debug\JustLoops.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\bin\Debug\JustLoops.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\bin\Debug\JustLoops.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\obj\Debug\JustLoops.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\obj\Debug\JustLoops.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\JustLoops\JustLoops\obj\Debug\JustLoops.pdb
