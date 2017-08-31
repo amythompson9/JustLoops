@@ -251,6 +251,205 @@ namespace JustLoops
             //}
 
 
+            //SITUATIONS IN WHICH WHILE/DO WHILE/FOR ARE THE SAME
+
+
+            //int x = 1;
+            //while(x<=10)
+            //{
+            //    Console.WriteLine(x);
+            //    x++;
+            //}
+
+            //WHILE LOOP
+
+            //int lives = 3;
+            //int magicNumber = 24;
+            //bool isPlaying = true;
+
+            //while (lives > 0)
+            //{
+            //    Console.WriteLine("Guess my lucky number");
+            //    int userGuess = int.Parse(Console.ReadLine());
+            //    if(magicNumber == userGuess)
+            //    {
+            //        Console.WriteLine("You guessed right!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sorry. Try again.");
+            //        lives--;
+            //        Console.WriteLine("You have " + lives +" lives left.");
+            //    }
+            //}
+
+            //WITH BOOL
+
+            //int lives = 3;
+            //int magicNumber = 24;
+            //bool isPlaying = true;
+
+            //while (lives > 0 && isPlaying == true)
+            //{
+            //    Console.WriteLine("Guess my lucky number");
+            //    int userGuess = int.Parse(Console.ReadLine());
+            //    if (magicNumber == userGuess)
+            //    {
+            //        Console.WriteLine("You guessed right!");
+            //        isPlaying = false;
+            //        //break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sorry. Try again.");
+            //        lives--;
+            //        Console.WriteLine("You have " + lives + " lives left.");
+            //    }
+            //}
+
+            //print out the numbers 1-100
+            //if the number is a multiple of 3 print fizz
+            //if the number is a multiple of 5 print buzz
+            //if the number is a multiple of 15 print fizzbuzz
+
+            //int x = 1;
+            //for(int counter = 1; counter<=100; counter++)
+            //{
+            //    if(counter % 15 == 0)
+            //    {
+            //        Console.WriteLine("FIZZBUZZ");
+            //    }
+            //    else if(counter % 5 == 0)
+            //    {
+            //        Console.WriteLine("BUZZ");
+            //    }
+            //    else if (counter % 3 == 0)
+            //    {
+            //        Console.WriteLine("FIZZ");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(counter);
+            //    }
+
+            //}
+
+            ////OR
+            //int x = 1;
+            //while(x<=100)
+            //{
+            //    if (x % 15 == 0)
+            //    {
+            //        Console.WriteLine("FIZZBUZZ");
+            //    }
+            //    else if (x % 5 == 0)
+            //    {
+            //        Console.WriteLine("BUZZ");
+            //    }
+            //    else if (x % 3 == 0)
+            //    {
+            //        Console.WriteLine("FIZZ");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine(x);
+            //    }
+            //    x++;
+
+            //}
+
+
+            //create an int array with  10 elements
+            //find the mean of these elements and ouput the result to the console
+
+            //int[] i = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
+            //int total = 0;
+            //foreach (int number in i)
+            //{
+            //    total += number;
+            //}
+            //int mean = total / i.Length;
+            //Console.WriteLine(mean);
+
+            //NESTED LOOPS
+
+            //LIKE A CLOCK OR HOW WE KEEP TIME.
+            //INNER LOOP IS COMPLETED FIRST
+
+            //1234
+            //1234
+            //for (int i = 1; i <= 2; i++)
+            //{
+            //    for (int j = 1; j <=4; j++)
+            //    {
+            //        Console.Write(j);//column
+            //    }
+            //    Console.WriteLine();//row
+            //}
+
+            //print a triangle
+            //int n = 4;
+            //for (int row = 1; row <=4; row++)
+
+            //{
+            //    for (int col = 1; col <= row; col++)
+            //    {
+            //        Console.Write(col + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //Write a program that prints a multiplication table (5 x 5, for example) using a nested loops.
+            
+            //for (int row = 1; row <= 5; row++)
+            //{
+            //    for (int col = 1; col <= 5; col++)
+            //    {
+            //        Console.Write("{0} x {1} ", row, col);
+            //    }
+            //    Console.WriteLine();
+            //}
+
+            //for (int row = 1; row <= 5; row++)
+            //{
+            //    for (int col = 1; col <= 5; col++)
+            //    {
+            //        Console.Write(row*col + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
+            //Create an array of your favorite movies. Print out each movie in the list, 
+            //unless the move starts with a vowel. Hint : Research .startsWith(
+            //string[] movies = { "Breaking Bad", "30 Rock", "Parks and Rec", "Unbreakable Kimmy Schmidt", "Bob's Burgers" };
+            //bool vowels = true;
+            //foreach (string film in movies)
+            //{
+            //    if(film.StartsWith("A")|| film.StartsWith("E") || film.StartsWith("I")|| film.StartsWith("O")|| film.StartsWith("U"))
+            //    {
+            //        vowels = true;
+            //    }
+            //    else
+            //    {
+            //        vowels = false;
+            //        Console.WriteLine(film);
+            //    }
+            //}
+
+            //Write a console application that asks the user for an integer. 
+            //If that integer is evenly divisible by 3, then write “You Won!” 
+            //If it isn’t, write “You Lost.” Keep asking them for a number (looping)until they win.
+            Console.WriteLine("Please enter a number.");
+            int number = int.Parse(Console.ReadLine());
+            while(number % 3 != 0)
+            {
+                Console.WriteLine("You lose. Try again.");
+                number = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("You won!");
+
         }
     }
 }
