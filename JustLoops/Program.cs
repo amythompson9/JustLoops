@@ -441,14 +441,37 @@ namespace JustLoops
             //Write a console application that asks the user for an integer. 
             //If that integer is evenly divisible by 3, then write “You Won!” 
             //If it isn’t, write “You Lost.” Keep asking them for a number (looping)until they win.
+            //Console.WriteLine("Please enter a number.");
+            //int number = int.Parse(Console.ReadLine());
+            //while(number % 3 != 0)
+            //{
+            //    Console.WriteLine("You lose. Try again.");
+            //    number = int.Parse(Console.ReadLine());
+            //}
+            //Console.WriteLine("You won!");
+
+            //Write a program and ask the user for 2 numbers (n and m)
+            //Check and see if M is greater than N
+            //If M is not larger then have the user enter new numbers.
+            //Between N and M find all the numbers that are multiples of 3 and print those numbers to the console.
             Console.WriteLine("Please enter a number.");
-            int number = int.Parse(Console.ReadLine());
-            while(number % 3 != 0)
+            int oneNumber = int.Parse(Console.ReadLine());
+            Console.WriteLine("Please enter another number.");
+            int twoNumber = int.Parse(Console.ReadLine());
+
+            while(twoNumber < oneNumber)
             {
-                Console.WriteLine("You lose. Try again.");
-                number = int.Parse(Console.ReadLine());
+                Console.WriteLine("Please choose another number.");
+                twoNumber = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine("You won!");
+            for (int i = oneNumber; i < twoNumber; i++)
+            {
+                if(i%3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
 
         }
     }
